@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://wechat-python-sdk.com/api/wechatconf/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>1. WechatConf - wechat-python-sdk</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">wechat-python-sdk</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">快速上手 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../quickstart/intro/">1. SDK 快速介绍</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../quickstart/official/">2. 官方接口</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../quickstart/wechatconf/">3. WechatConf 详解</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">官方接口 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../official/intro/">0. 前置介绍</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/access/">1. 接入指南</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/message/">2. 消息管理</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/menu/">3. 自定义菜单</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/website/">4. 微信网页开发</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/material/">5. 素材管理</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/user/">6. 用户管理</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/account/">7. 账号管理</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/datacube/">8. 数据统计</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/store/">9. 微信小店 </a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../official/service/">10. 微信多客服功能</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API 文档 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li class="active">
+    <a href="./">1. WechatConf</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../wechatmessage/">2. WechatMessage</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../exception/">3. 异常类</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq/">FAQ</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/project/">关于项目</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/author/">关于作者</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../../official/service/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../wechatmessage/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/wechat-python-sdk">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#wechatconf-api">WechatConf API</a></li>
+        
+            <li><a href="#wechatconf">WechatConf()</a></li>
+        
+            <li><a href="#_1">属性</a></li>
+        
+            <li><a href="#_2">方法</a></li>
+        
+            <li><a href="#_3">异常</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="wechatconf-api">WechatConf API<a class="headerlink" href="#wechatconf-api" title="Permanent link">&para;</a></h1>
+<p>WechatConf 是 <strong>微信配置类</strong>，你需要将在公众平台开发者选项中的 Token/AppID/AppSecret/EncodingAESKey 等信息传入其中，之后该类将会自行维护相关配置信息（access_token/jsapi_ticket）的有效性，支持分布式。</p>
+<h2 id="wechatconf">WechatConf()<a class="headerlink" href="#wechatconf" title="Permanent link">&para;</a></h2>
+<p><strong>导入方式：</strong><code>from wechat_sdk import WechatConf</code></p>
+<p><strong>signature:</strong> </p>
+<pre><code class="python">WechatConf(token=None, appid=None, appsecret=None, encrypt_mode='safe', encoding_aes_key=None,
+           access_token_getfunc=None, access_token_setfunc=None, access_token_refreshfunc=None, access_token=None, 
+           access_token_expires_at=None, jsapi_ticket_getfunc=None, jsapi_ticket_setfunc=None, 
+           jsapi_ticket_refreshfunc=None, jsapi_ticket=None, jsapi_ticket_expires_at=None, checkssl=False)
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>token</code></td>
+<td>公众平台开发者选项中你设置的 Token</td>
+</tr>
+<tr>
+<td><code>appid</code></td>
+<td>公众平台开发者选项中的 App ID</td>
+</tr>
+<tr>
+<td><code>appsecret</code></td>
+<td>公众平台开发者选项中的 App Secret</td>
+</tr>
+<tr>
+<td><code>encrypt_mode</code></td>
+<td>消息加解密方式。可选项 <code>normal</code>（明文模式）、<code>compatible</code>（兼容模式）、<code>safe</code>（安全模式）</td>
+</tr>
+<tr>
+<td><code>encoding_aes_key</code></td>
+<td>公众平台开发者选项中的 EncodingAESKey</td>
+</tr>
+<tr>
+<td><code>access_token_getfunc</code></td>
+<td>access_token 获取函数。如果传入该参数，WechatConf 内部将会在需要使用 access_token 时直接调用该函数，该函数不应接受任何参数，该函数应返回一个 Tuple，里面包含两个元素，分别是 access_token 和 access_token_expires_at。</td>
+</tr>
+<tr>
+<td><code>access_token_setfunc</code></td>
+<td>access_token 设置函数。如果传入该参数，WechatConf 内部将会在需要更新 access_token 时直接调用该函数，该函数应接受两个参数，为 access_token 的字符串值和 access_token 的过期时间。该函数无返回值。</td>
+</tr>
+<tr>
+<td><code>access_token_refreshfunc</code></td>
+<td>access_token 刷新函数。如果传入该参数，WechatConf 内部将会在需要更新 access_token 时直接调用该函数而不会请求官方 API，该函数不应接收任何参数，用于分布式环境下的业务逻辑服务器。该函数应返回一个 Tuple，里面包含两个元素,分别是 access_token 和 access_token_expires_at。</td>
+</tr>
+<tr>
+<td><code>access_token</code></td>
+<td>直接导入的 access token 值, 该值需要在上一次该类实例化之后手动进行缓存并在此处传入, 如果不传入, 将会在需要时自动重新获取 <strong>(传入 access_token_getfunc 和 access_token_setfunc 函数后将会自动忽略此处的传入值)</strong></td>
+</tr>
+<tr>
+<td><code>access_token_expires_at</code></td>
+<td>直接导入的 access token 的过期日期, 该值需要在上一次该类实例化之后手动进行缓存并在此处传入, 如果不传入, 将会在需要时自动重新获取 <strong>(传入 access_token_getfunc 和 access_token_setfunc 函数后将会自动忽略此处的传入值)</strong></td>
+</tr>
+<tr>
+<td><code>jsapi_ticket_getfunc</code></td>
+<td>jsapi_ticket 获取函数。如果传入该参数，WechatConf 内部将会在需要使用 jsapi_ticket 时直接调用该函数，该函数不应接受任何参数。该函数应返回一个 Tuple，里面包含两个元素，分别是 jsapi_ticket 和 jsapi_ticket_expires_at。</td>
+</tr>
+<tr>
+<td><code>jsapi_ticket_setfunc</code></td>
+<td>jsapi_ticket 设置函数。如果传入该参数，WechatConf 内部将会在需要更新 jsapi_ticket 时直接调用该函数，该函数应接受两个参数，为 jsapi_ticket 的字符串值和 jsapi_ticket 的过期时间。该函数无返回值。</td>
+</tr>
+<tr>
+<td><code>jsapi_ticket_refreshfunc</code></td>
+<td>jsapi_ticket 刷新函数。如果传入该参数，WechatConf 内部将会在需要更新 jsapi_ticket 时直接调用该函数而不会请求官方 API，该函数不应接收任何参数，用于分布式环境下的业务逻辑服务器。该函数应返回一个 Tuple，里面包含两个元素,分别是 jsapi_ticket 和 jsapi_ticket_expires_at。</td>
+</tr>
+<tr>
+<td><code>jsapi_ticket</code></td>
+<td>直接导入的 jsapi ticket 值, 该值需要在上一次该类实例化之后手动进行缓存并在此处传入, 如果不传入, 将会在需要时自动重新获取 <strong>(传入 jsapi_ticket_getfunc 和 jsapi_ticket_setfunc 函数后将会自动忽略此处的传入值)</strong></td>
+</tr>
+<tr>
+<td><code>jsapi_ticket_expires_at</code></td>
+<td>直接导入的 jsapi ticket 的过期日期, 该值需要在上一次该类实例化之后手动进行缓存并在此处传入, 如果不传入, 将会在需要时自动重新获取 <strong>(传入 jsapi_ticket_getfunc 和 jsapi_ticket_setfunc 函数后将会自动忽略此处的传入值)</strong></td>
+</tr>
+<tr>
+<td><code>checkssl</code></td>
+<td>是否检查 SSL, 默认不检查 (False), 可避免 urllib3 的 InsecurePlatformWarning 警告</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_1">属性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="token">.token<a class="headerlink" href="#token" title="Permanent link">&para;</a></h3>
+<p>（可直接赋值更改）当前正在使用的 Token 值</p>
+<h3 id="appid">.appid<a class="headerlink" href="#appid" title="Permanent link">&para;</a></h3>
+<p>当前正在使用的 App ID 值</p>
+<h3 id="appsecret">.appsecret<a class="headerlink" href="#appsecret" title="Permanent link">&para;</a></h3>
+<p>当前正在使用的 App Secret 值</p>
+<h3 id="encrypt_mode">.encrypt_mode<a class="headerlink" href="#encrypt_mode" title="Permanent link">&para;</a></h3>
+<p>（可直接赋值更改）当前正在使用的消息加解密方式。</p>
+<p>返回内容为字符串，<code>normal</code>为明文模式，<code>compatible</code>为兼容模式，<code>safe</code>为安全模式</p>
+<h3 id="encoding_aes_key">.encoding_aes_key<a class="headerlink" href="#encoding_aes_key" title="Permanent link">&para;</a></h3>
+<p>（可直接赋值更改）当前正在使用的 EncodingAESKey</p>
+<h3 id="crypto">.crypto<a class="headerlink" href="#crypto" title="Permanent link">&para;</a></h3>
+<p>当前 Crypto 实例，可直接用于加密解密消息操作</p>
+<h3 id="access_token">.access_token<a class="headerlink" href="#access_token" title="Permanent link">&para;</a></h3>
+<p>当前的 access_token 值，该值会由 WechatConf 内部动态维护合法性</p>
+<h3 id="jsapi_ticket">.jsapi_ticket<a class="headerlink" href="#jsapi_ticket" title="Permanent link">&para;</a></h3>
+<p>当前的 jsapi_ticket 值，该值会由 WechatConf 内部动态维护合法性</p>
+<h2 id="_2">方法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="set_appid_appsecretappid-appsecret">.set_appid_appsecret(appid, appsecret)<a class="headerlink" href="#set_appid_appsecretappid-appsecret" title="Permanent link">&para;</a></h3>
+<p>设置当前 App ID 和 App Secret</p>
+<p><strong>Return:</strong> None</p>
+<h3 id="grant_access_token">.grant_access_token()<a class="headerlink" href="#grant_access_token" title="Permanent link">&para;</a></h3>
+<p>获取 access_token 并更新当前配置（默认情况下会自行维护，无需调用此函数，仅为强制刷新时使用）</p>
+<p><strong>Return:</strong> 返回 <a href="http://mp.weixin.qq.com/wiki/14/9f9c82c1af308e3b14ba9b973f99a8ba.html">官方接口</a> 返回的 JSON 数据，示例：</p>
+<pre><code class="json">{
+    &quot;access_token&quot;: &quot;HoVFaIslbrofqJgkR0Svcx2d4za0RJKa3H6A_NjzhBbm96Wtg_a3ifUYQvOfJmV76QTcCpNubcsnOLmDopu2hjWfFeQSCE4c8QrsxwE_N3w&quot;,
+    &quot;expires_in&quot;: 7200
+}
+</code></pre>
+
+<h3 id="grant_jsapi_ticket">.grant_jsapi_ticket()<a class="headerlink" href="#grant_jsapi_ticket" title="Permanent link">&para;</a></h3>
+<p>获取 jsapi_ticket 并更新当前配置（默认情况下会自行维护，无需调用此函数，仅为强制刷新时使用）</p>
+<p><strong>Return:</strong> 返回 <a href="http://mp.weixin.qq.com/wiki/11/74ad127cc054f6b80759c40f77ec03db.html#.E8.8E.B7.E5.8F.96api_ticket">官方接口</a> 返回的 JSON 数据，示例：</p>
+<pre><code class="json">{
+    &quot;errcode&quot;:0,
+    &quot;errmsg&quot;:&quot;ok&quot;,
+    &quot;ticket&quot;:&quot;bxLdikRXVbTPdHSM05e5u5sUoXNKd8-41ZO3MhKoyN5OfkWITDGgnr2fwJ0m9E8NYzWKVZvdVtaUgWvsdshFKA&quot;,
+    &quot;expires_in&quot;:7200
+}
+</code></pre>
+
+<h3 id="get_access_token">.get_access_token()<a class="headerlink" href="#get_access_token" title="Permanent link">&para;</a></h3>
+<p><strong>该方法仅为自行维护单机版 access_token 使用</strong></p>
+<p>获取 access_token 及 access_token 过期日期, 仅供缓存使用。 如果希望得到原生的 access_token 请求数据请使用 <code>grant_access_token</code>。</p>
+<p><strong>Return:</strong> dict 对象, key 包括 <code>access_token</code> 及 <code>access_token_expires_at</code>，示例：</p>
+<pre><code class="json">{
+    &quot;access_token&quot;:&quot;Uj6gDn1My01ElQvLXjudqdXlnTYosqWnxPT-1AX_jJEqeYhbqASZXPlnur7k6YV7Erjvd_JDXbQWeZYIMmu958WV4VWe7GKD65q_VLHecTp8nA5DwU_DOdmVBACU2wDkPGBbAHAEVQ&quot;,
+    &quot;access_token_expires_at&quot;:1454476716
+}
+</code></pre>
+
+<h3 id="get_jsapi_ticket">.get_jsapi_ticket()<a class="headerlink" href="#get_jsapi_ticket" title="Permanent link">&para;</a></h3>
+<p><strong>该方法仅为自行维护单机版 jsapi_ticket 使用</strong></p>
+<p>获取 jsapi_ticket 及 jsapi_ticket 过期日期, 仅供缓存使用, 如果希望得到原生的 jsapi_ticket 请求数据请使用 <code>grant_jsapi_ticket</code>。</p>
+<p><strong>Return:</strong> dict 对象, key 包括 <code>jsapi_ticket</code> 及 <code>jsapi_ticket_expires_at</code>，示例：</p>
+<pre><code class="json">{
+    &quot;jsapi_ticket&quot;:&quot;bxLdikRXVbTPdHSM05e5u8EoHz_JA7Re-noqE0ZAnxk3XzAntyhT4_k272aJ4LprCM68rVXv6DDydT7JW1Mwsw&quot;,
+    &quot;jsapi_ticket_expires_at&quot;: 1454476720
+}
+</code></pre>
+
+<h2 id="_3">异常<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>当提供参数不足时，会抛出 <code>wechat_sdk.exceptions.NeedParamError</code> 异常。</p>
+<p>示例（仅提供了 <code>appid</code> 参数却调用了需要 <code>appid</code> 和 <code>appsecret</code> 的 <code>get_access_token()</code> 方法）：</p>
+<pre><code>&gt;&gt;&gt; from wechat_sdk import WechatConf
+&gt;&gt;&gt; conf = WechatConf(appid='wxa81b377716e65e59')
+&gt;&gt;&gt; conf.get_access_token()
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "wechat_sdk/core/conf.py", line 236, in get_access_token
+    self._check_appid_appsecret()
+  File "wechat_sdk/core/conf.py", line 270, in _check_appid_appsecret
+    raise NeedParamError('Please provide app_id and app_secret parameters in the construction of class.')
+wechat_sdk.exceptions.NeedParamError: Please provide app_id and app_secret parameters in the construction of class.
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>Copyright 2014-2016 Ace Kwok</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

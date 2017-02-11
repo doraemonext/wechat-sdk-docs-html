@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://wechat-python-sdk.com/official/menu/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>3. 自定义菜单 - wechat-python-sdk</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">wechat-python-sdk</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">快速上手 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../quickstart/intro/">1. SDK 快速介绍</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../quickstart/official/">2. 官方接口</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../quickstart/wechatconf/">3. WechatConf 详解</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">官方接口 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../intro/">0. 前置介绍</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../access/">1. 接入指南</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../message/">2. 消息管理</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">3. 自定义菜单</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../website/">4. 微信网页开发</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../material/">5. 素材管理</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../user/">6. 用户管理</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../account/">7. 账号管理</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../datacube/">8. 数据统计</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../store/">9. 微信小店 </a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../service/">10. 微信多客服功能</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API 文档 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../api/wechatconf/">1. WechatConf</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../api/wechatmessage/">2. WechatMessage</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../api/exception/">3. 异常类</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq/">FAQ</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/project/">关于项目</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/author/">关于作者</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../message/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../website/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/wechat-python-sdk">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#-">官方接口 - 自定义菜单</a></li>
+        
+            <li><a href="#_1">自定义菜单创建</a></li>
+        
+            <li><a href="#_2">自定义菜单查询</a></li>
+        
+            <li><a href="#_3">自定义菜单删除</a></li>
+        
+            <li><a href="#_4">自定义菜单事件推送</a></li>
+        
+            <li><a href="#_7">个性化菜单接口</a></li>
+        
+            <li><a href="#_8">获取公众号的菜单配置</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="-">官方接口 - 自定义菜单<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
+<h2 id="_1">自定义菜单创建<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>调用方法：</strong><code>.create_menu(menu_data)</code></p>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li><code>menu</code>: dict 对象，描述了菜单的内容，示例如下：<pre><code>{
+    'button':[
+        {
+            'type': 'click',
+            'name': '今日歌曲',
+            'key': 'V1001_TODAY_MUSIC'
+        },
+        {
+            'type': 'click',
+            'name': '歌手简介',
+            'key': 'V1001_TODAY_SINGER'
+        },
+        {
+            'name': '菜单',
+            'sub_button': [
+                {
+                    'type': 'view',
+                    'name': '搜索',
+                    'url': 'http://www.soso.com/'
+                },
+                {
+                    'type': 'view',
+                    'name': '视频',
+                    'url': 'http://v.qq.com/'
+                },
+                {
+                    'type': 'click',
+                    'name': '赞一下我们',
+                    'key': 'V1001_GOOD'
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+</li>
+</ul>
+<p><strong>调用前检查：</strong>App ID / App Secret</p>
+<p><strong>返回值：</strong>正常返回官方接口的 JSON 数据：<code>{"errcode": 0, "errmsg": "ok"}</code>，一般无需理会该返回值，创建失败会抛出异常，捕获异常即可。</p>
+<p><strong>异常：</strong>当发生失败时抛出 <a href="../../api/exception/#officialapierror"><code>exceptions.OfficialAPIError</code></a> 异常，该异常包含了错误的代号与原因信息。</p>
+<p><strong>对应官方文档：</strong><a href="http://mp.weixin.qq.com/wiki/10/0234e39a2025342c17a7d23595c6b40a.html">自定义菜单创建接口</a></p>
+<h2 id="_2">自定义菜单查询<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>调用方法：</strong><code>.get_menu()</code></p>
+<p><strong>调用前检查：</strong>App ID / App Secret</p>
+<p><strong>返回值：</strong>正常返回官方接口的 JSON 数据，因示例过长，请直接点击 <a href="http://mp.weixin.qq.com/wiki/5/f287d1a5b78a35a8884326312ac3e4ed.html">自定义菜单查询接口</a> 查看。</p>
+<p><strong>异常：</strong>当发生失败时抛出 <a href="../../api/exception/#officialapierror"><code>exceptions.OfficialAPIError</code></a> 异常，该异常包含了错误的代号与原因信息。</p>
+<p><strong>对应官方文档：</strong><a href="http://mp.weixin.qq.com/wiki/5/f287d1a5b78a35a8884326312ac3e4ed.html">自定义菜单查询接口</a></p>
+<h2 id="_3">自定义菜单删除<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><strong>调用方法：</strong><code>.delete_menu()</code></p>
+<p><strong>调用前检查：</strong>App ID / App Secret</p>
+<p><strong>返回值：</strong>正常返回官方接口的 JSON 数据：<code>{"errcode": 0, "errmsg": "ok"}</code>，一般无需理会该返回值，删除失败会抛出异常，捕获异常即可。</p>
+<p><strong>异常：</strong>当发生失败时抛出 <a href="../../api/exception/#officialapierror"><code>exceptions.OfficialAPIError</code></a> 异常，该异常包含了错误的代号与原因信息。</p>
+<p><strong>对应官方文档：</strong><a href="http://mp.weixin.qq.com/wiki/3/de21624f2d0d3dafde085dafaa226743.html">自定义菜单删除接口</a></p>
+<h2 id="_4">自定义菜单事件推送<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>当自定义菜单事件推送 XML 到达并经过 <a href="../message/#xml"><code>.parse_data()</code></a> 方法解析后，你可以通过下面的代码判断该信息属于事件：</p>
+<pre><code class="python">from wechat_sdk.messages import EventMessage
+if isinstance(wechat.message, EventMessage):
+</code></pre>
+
+<p>然后你可以继续通过 <code>wechat.message.type</code> 来继续判断它属于下列哪种事件并获取事件内容。</p>
+<h3 id="_5">点击菜单拉取消息时的事件推送<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'click'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code>，与自定义菜单中的 KEY 值相对应</li>
+</ul>
+<h3 id="_6">点击菜单跳转链接时的事件推送<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'view'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code></li>
+<li><code>wechat.message.menu_id</code> 对应于 XML 信息中的 <code>MenuId</code>，指菜单 ID，如果是个性化菜单，则可以通过这个字段，知道是哪个规则的菜单被点击了</li>
+</ul>
+<h3 id="scancode_push">scancode_push：扫码推事件的事件推送<a class="headerlink" href="#scancode_push" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'scancode_push'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code></li>
+<li><code>wechat.message.ScanCodeInfo</code> 对应于 XML 信息中的 <code>ScanCodeInfo</code>，扫描信息</li>
+</ul>
+<h3 id="scancode_waitmsg">scancode_waitmsg：扫码推事件且弹出“消息接收中”提示框的事件推送<a class="headerlink" href="#scancode_waitmsg" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'scancode_waitmsg'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code></li>
+<li><code>wechat.message.ScanCodeInfo</code> 对应于 XML 信息中的 <code>ScanCodeInfo</code>，扫描信息 </li>
+</ul>
+<h3 id="pic_sysphoto">pic_sysphoto：弹出系统拍照发图的事件推送<a class="headerlink" href="#pic_sysphoto" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'pic_sysphoto'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code></li>
+<li><code>wechat.message.SendPicsInfo</code> 对应于 XML 信息中的 <code>SendPicsInfo</code>，发送的图片信息</li>
+</ul>
+<h3 id="pic_photo_or_album">pic_photo_or_album：弹出拍照或者相册发图的事件推送<a class="headerlink" href="#pic_photo_or_album" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'pic_photo_or_album'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code></li>
+<li><code>wechat.message.SendPicsInfo</code> 对应于 XML 信息中的 <code>SendPicsInfo</code>，发送的图片信息</li>
+</ul>
+<h3 id="pic_weixin">pic_weixin：弹出微信相册发图器的事件推送<a class="headerlink" href="#pic_weixin" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'pic_weixin'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code></li>
+<li><code>wechat.message.SendPicsInfo</code> 对应于 XML 信息中的 <code>SendPicsInfo</code>，发送的图片信息</li>
+</ul>
+<h3 id="location_select">location_select：弹出地理位置选择器的事件推送<a class="headerlink" href="#location_select" title="Permanent link">&para;</a></h3>
+<p>判断代码：<code>wechat.message.type == 'location_select'</code></p>
+<p>判断后的信息获取：</p>
+<ul>
+<li><code>wechat.message.key</code> 对应于 XML 信息中的 <code>EventKey</code></li>
+<li><code>wechat.message.SendLocationInfo</code> 对应于 XML 信息中的 <code>SendLocationInfo</code>，发送的位置信息</li>
+</ul>
+<h2 id="_7">个性化菜单接口<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>待开发</p>
+<h2 id="_8">获取公众号的菜单配置<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>待开发</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>Copyright 2014-2016 Ace Kwok</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
